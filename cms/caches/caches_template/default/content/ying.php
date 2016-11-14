@@ -1,0 +1,123 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ily365</title>
+<link href="<?php echo MYCSS_PATH;?>ily/ying.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="statics/images/logo32.png">
+</head>
+
+<body>
+	<div class="nav">
+		<div class="navbox">
+			<img class="logo" src="statics/images/logo.png">
+			<div class="navsbox">
+			   <?php include template("content","header"); ?>
+			</div>
+			<div class="tel">
+				<img src="statics/images/tel.png">
+				<p class="tel1">客户咨询热线</p>
+				<p class="tel2">0731-85580789</p>
+			</div>
+		</div>
+	</div>
+	<div class="y_banner">
+		<div class="ybanner_bg"></div>
+	</div>
+	<div class="mgs">
+		<div class="y_s1">
+			<img src="statics/images/y_t1.png">
+			<p>智能硬件设备是与电子票务系统配套使用的，这些高效便捷的设备旨在帮助景区提高工作效率、节省人力、防止假票和人情票带来的损失，是景区实现智慧管理的重要体现。目前我们提供的智能硬件设备包括门票打印机、手持检票机、扫描枪、身份证阅读器、检票闸机。您可根据自己景区的实际需求来选择。</p>
+		</div>
+
+
+
+
+		<?php $n=1;if(is_array($_categoryinfo)) foreach($_categoryinfo AS $k=>$v) { ?>
+		<div class="y_s2">
+			<h1><?php echo $v['catname'];?></h1>
+
+			<?php $tmp_arr=array_shift($_yinginfo)?>
+
+			<?php $n=1;if(is_array($tmp_arr)) foreach($tmp_arr AS $val) { ?>
+			<div class="y_s2_l">
+				<p><?php echo $val['description'];?></p>
+			</div>
+			<?php $n++;}unset($n); ?>
+
+
+
+			<div class="y_s2_r">
+				<img src="<?php echo $v['image'];?>">
+			</div>
+		</div>
+
+
+		<?php $n++;}unset($n); ?>
+
+
+		<!--   <div class="y_s2">
+                <h1>门票打印机</h1>
+            	<div class="y_s2_l">
+                <p>通过USB连接电脑，装入卡纸，通过景区版系统实现订购门票、纸票兑换、打印管理。能打印各类条码、二维码、电子门票，出票最高速度120张/分钟。</p></div>
+                <div class="y_s2_r">
+                <img src="images/y_img01.jpg">
+                </div>
+                </div>
+                 
+                 <div class="y_s2">
+                <h1>身份证阅读器</h1>
+            	<div class="y_s2_l">
+                <p>无需人工输入，自动读取身份证信息，提高工作效率，减少人工输入的错误率。全面支持二代身份证，读身份证信息仅需0.2秒，高效便捷。</p></div>
+                <div class="y_s2_r">
+                <img src="images/y_img02.png">
+                </div>
+                </div>
+                
+                <div class="y_s2">
+                <h1>扫描枪</h1>
+            	<div class="y_s2_l">
+                <p>对手撕票进行扫描激活门票，提高工作效率，减少人为错误。</p></div>
+                <div class="y_s2_r">
+                <img src="images/y_img03.jpg">
+                </div>
+                </div>
+                
+                
+                <div class="y_s2">
+                <h1>手持检票机</h1>
+            	<div class="y_s2_l">
+                <p>用户门票核销，操作灵活方便，设备能够适应于任何环境。</p></div>
+                <div class="y_s2_r">
+                <img src="images/y_img04.jpg">
+                </div>
+                </div>
+                
+                
+                <div class="y_s2">
+                <h1>检票闸机</h1>
+            	<div class="y_s2_l">
+                <p>设备全电脑控制安全高效，门票核销过程实时联网，确保门票有效。</p></div>
+                <div class="y_s2_r">
+                <img src="images/y_img05.jpg">
+                </div>
+                </div>
+                 -->
+
+
+
+	</div>
+
+
+	<div class="bottom">
+		<div class="line"></div>
+		<div class="midline">
+			   <?php include template("content","links"); ?>
+		</div>
+
+		<?php include('phpcms/templates/default/content/foot.html');?>
+
+	</div>
+</body>
+
+</html>

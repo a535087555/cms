@@ -1,0 +1,303 @@
+@CHARSET "UTF-8";
+body, ul, li, p, span, h1, h2, a, dd, dl {
+	margin: 0;
+	list-style: none;
+	font-family: "微软雅黑";
+	border: none;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+img {
+	display: block;
+}
+
+.nav {
+	width: 100%;
+	height: 86px;
+	background-image: url(../../images/nav_bg.png);
+	background-repeat: repeat-x;
+}
+
+.navbox * {
+	float: left;
+}
+
+.navbox {
+	width: 1270px;
+	height: 86px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navsbox {
+	line-height: 86px;
+	width: 852px;
+	margin-left: 50px;
+}
+
+.logo {
+	margin-top: 11px;
+}
+
+li {
+	font-size: 16px;
+	color: #666666;
+	width: 136px;
+	text-align: center;
+	height: 85px;
+}
+
+ul .firstnav {
+width: 120px;
+	height: 85px;
+    color: #666666;
+	text-align: center;
+}
+
+.about {
+	background-color: #35b1e7;
+	color: #ffffff;
+	margin-left: 2px;
+}
+
+li:hover {
+	background-color: #35b1e7;
+	color: #ffffff;
+}
+
+.tel {
+	width: 206px;
+	height: 86px;
+}
+
+.tel1 {
+	font-size: 12px;
+	color: #828282;
+	width: 172px;
+	margin-top: 24px;
+	margin-left: 10px;
+}
+
+.tel2 {
+	font-size: 16px;
+	color: #6c6c6c;
+	width: 172px;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+
+.a_banner {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+.abanner_bg {
+	background-image: url(../../images/a_banner.png);
+	background-repeat: no-repeat;
+	height: 500px;
+	position: relative;
+	left: 50%;
+	margin-left: -960px;
+}
+
+.mgs {
+	width: 1270px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.mgs-clearfix {
+	*zoom: 1
+}
+
+.mgs-clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+.a_s2 {
+	width: 1270px;
+	margin-bottom: 60px;
+	
+}
+.a_s2_1 p{
+	
+	font-family: "微软雅黑";
+	
+}
+
+.a_s3 {
+	width: 1270px;
+	height: 120px;
+	margin-bottom: 60px;
+}
+
+.a_s2 * {
+	float: left;
+}
+
+.a_s2 h1, .a_s3 h1, .a_s4 h1 {
+	font-size: 24px;
+	color: #323232;
+    font-family: "微软雅黑";
+	width: 1270px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: right;
+	margin-bottom: 20px;
+}
+
+.a_s2 h1, .a_s3 h1, .a_s4 h1 {
+	background-image: url(../../images/r_s2_line3.jpg);
+}
+
+.a_s2 p, .a_s3 p, .a_s4 p {
+	font-size: 14px;
+	color: #4646464;
+	font-family: "微软雅黑";
+	margin-bottom: 10px;
+	width: 1240px;
+}
+
+.a_s2 img {
+	margin-right: 10px;
+}
+
+.a_s4 {
+	width: 1270px;
+	height: 624px;
+}
+
+.a_s4 img {
+	
+}
+
+.line {
+	background-color: #35b1e7;
+	width: 100%;
+	height: 5px;
+}
+
+.midline {
+	background-color: #323232;
+	width: 100%;
+	height: 236px;
+}
+
+.boline {
+	width: 100%;
+	height: 80px;
+	background-color: #1f1f1f;
+}
+
+.bottom h1 {
+	width: 450px;
+	font-size: 14px;
+	color: #323232;
+	font-weight: normal;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+.bottom h2 {
+	font-size: 12px;
+	color: #323232;
+	width: 300px;
+	font-weight: normal;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.centerbox {
+	width: 1270px;
+	height: 236px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centerbox * {
+	float: left;
+}
+
+.rbox .r1, .rbox .r2, .rbox .r3, .rbox .r4 {
+	width: 200px;
+	height: 206px;
+	padding-top: 30px;
+}
+
+.lbox, .rbox {
+	height: 206px;
+}
+
+.rbox img {
+	margin-right: 3px;
+	margin-top: 12px;
+}
+
+.lbox {
+	width: 450px;
+	padding-top: 30px;
+}
+
+.rbox {
+	width: 800px;
+}
+
+.lbox h1 {
+	margin-bottom: 11px;
+}
+
+.lbox p {
+	margin-bottom: 7px;
+}
+
+.rbox h1 {
+	margin-bottom: 15px;
+}
+
+.rbox p {
+	margin-bottom: 18px;
+}
+
+.rbox h1, .lbox h1 {
+	font-size: 14px;
+	color: #bbbbbb;
+}
+
+.rbox p, .lbox p {
+	font-size: 12px;
+	color: #777777;
+}
+
+.rbox h1, .rbox p {
+	width: 194px;
+}
+
+.lbox h1, .lbox p {
+	width: 450px;
+}
+
+.r6{ width: 150px; height: 200px; float: left;}
+.r6 a p h1{width: 150px; height: 20px;}
+.linkscontent{width: 100px; height: 200px; float: left;}
+
+.rbox>.r6>.r6{position: relative; left:200px; top :-200px;}
+.rbox>.r6>.r6>.r6{position: relative;  left:200px; top :-200px;}
+.rbox>.r6>.r6>.r6>.r6{position: relative; left:200px; top :-200px;}

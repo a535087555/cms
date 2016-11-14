@@ -1,0 +1,43 @@
+
+
+<div class="centerbox">
+
+       <div class="center">
+				<div class="lbox">
+					<h1>联系方式</h1>
+					<p>地址：长沙市雨花区万家丽中路华晨双帆国际701室</p>
+					<p>邮箱：zhly@cninone.com</p>
+					<p>电话：0731-85580789</p>
+				</div>
+			 {pc:content  action="ilylinks"}
+    
+            
+          
+            <div class="rbox"> 
+            {loop $data['categoryinfo'] $k1=>$v1}
+			    <div class="r6">
+					
+					<img src="statics/images/l1.png"> 
+					   <div class="linkscontent">
+                  	   <a href="#"><h1>{$v1[catname]}</h1></a>
+                  		
+                  		<?php $arr 	= array_shift($data['linksinfo']);?>
+                  		{loop $arr $k=>$v}
+								<a href="{$v['18']}"><p>{$v['3']}</p></a> 
+						{/loop}
+						
+						</div>
+                  {/loop}
+                      
+                </div>
+            
+            
+            
+           {/pc}
+        
+        </div>
+        
+    </div>    
+    
+  	</div>	</div>
+</div>

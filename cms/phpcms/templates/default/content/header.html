@@ -1,0 +1,13 @@
+<div class="navsbox">
+			
+	 {pc:content  action="navlist" posid="9" order="id" num="10" cache="0"}
+    		<div id="announ">
+                 <ul>
+                 {loop $data $k $v}
+                        
+                      <a href="{$v[description]}"><li class="firstnav">{$v[title]}</li></a>
+                      {/loop}
+                 </ul>
+            </div>
+     {/pc}
+			</div>
